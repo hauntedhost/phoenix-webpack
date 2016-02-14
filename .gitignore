@@ -14,3 +14,10 @@ erl_crash.dump
 # secrets file as long as you replace its contents by environment
 # variables.
 /config/prod.secret.exs
+
+npm-debug.log*
+node_modules/
+
+# Since we are building assets from web/static,
+# we ignore priv/static.
+/priv/static/
