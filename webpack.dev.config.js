@@ -6,8 +6,8 @@ module.exports = {
   entry: config.ENTRY,
 
   output: {
-    path: path.join(__dirname, '..', 'tmp'),
-    filename: '[name]-bundle.js',
+    path: path.join(__dirname, 'tmp'),
+    filename: 'js/[name]-bundle.js',
     publicPath: `http://localhost:${config.DEV_SERVER.PORT}/${config.DEV_SERVER.PATH}`
   },
 

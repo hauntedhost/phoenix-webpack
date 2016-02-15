@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     path: config.DIST_PATH,
-    filename: '[name]-bundle.js'
+    filename: 'js/[name]-bundle.js'
   },
 
   devtool: 'cheap-hidden-source-map',
@@ -40,7 +40,7 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('[name]-bundle.css'),
+    new ExtractTextPlugin('css/[name]-bundle.css'),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: false
     })

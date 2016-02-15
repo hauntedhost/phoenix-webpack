@@ -1,7 +1,7 @@
 var path = require('path');
 
-var DIST_PATH = './priv/static/js';
-var FRONTEND_PATH = './web/static/js';
+var DIST_PATH = './priv/static';
+var FRONTEND_PATH = './web/static';
 
 module.exports = {
   DEV_SERVER: {
@@ -11,6 +11,6 @@ module.exports = {
   DIST_PATH: DIST_PATH,
   FRONTEND_PATH: FRONTEND_PATH,
   ENTRY: {
-    main: path.join(FRONTEND_PATH, 'index.js')
+    main: FRONTEND_PATH + '/js/index.js'
   },
 };
